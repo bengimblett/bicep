@@ -3,11 +3,11 @@ param apiManagementServiceName string = 'apiservice${uniqueString(resourceGroup(
 
 @description('The email address of the owner of the service')
 @minLength(1)
-param publisherEmail string = 'begim@microsof.com'
+param publisherEmail string 
 
 @description('The name of the owner of the service')
 @minLength(1)
-param publisherName string ='begim'
+param publisherName string 
 
 @description('The instance size of this API Management service.')
 param skuCount int = 1
@@ -16,7 +16,7 @@ param skuCount int = 1
 param location string = resourceGroup().location
 
 @description('Location of the secondary region of API Management service.')
-param secondaryLocation string = 'UK West'
+param secondaryLocation string 
 
 
 
